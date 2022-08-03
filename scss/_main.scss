@@ -36,7 +36,7 @@
     position:relative;
     z-index: 3;
     background: #9B00FA;
-    background: linear-gradient(to right, #9B00FA 0%, #FF7BBA 100%);
+    background: linear-gradient(to right, hwb(277 0% 2%) 0%, #FF7BBA 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -88,15 +88,144 @@
 .content{
   padding-top: 70px;
 }
+
 .front-element{
-  img{
+  margin-bottom: 100px;
+  &__background{
     position: relative;
     width: 100%;
     height: auto;
+    box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.39);
   }
   h1{
     position: absolute;
     top: 0;
+    color: white;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    margin: 180px 50px;
+    text-shadow:0px 5px 40px #202020;
+  }
+  .gradient1{
+  background: linear-gradient(to right, rgb(255, 123, 186) 20%, rgb(15, 223, 255) 40%, rgb(15, 223, 255) 60%, rgb(255, 123, 186) 80%);
+  background-size: 200% auto;
+  color: #000;
+  font-size: 5vw;
+  font-weight: 800;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+    animation: shine 7s linear infinite;
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+}
+
+.gradient2{
+  background: linear-gradient(to right, rgb(255, 123, 186) 20%, rgb(155, 0, 250) 40%, rgb(155, 0, 250) 60%, rgb(255, 123, 186) 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+    animation: shine 7s linear infinite;
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+
+.active-button{
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  background: rgb(64,132,238);
+  background: linear-gradient(180deg, rgba(64,132,238,1) 0%, rgba(128,107,241,1) 87%);
+  color: white;
+  font-family: 'Ruda', sans-serif;
+  cursor:pointer;
+}
+
+.active-button:hover{
+  background: rgb(48,97,175);
+  background: linear-gradient(180deg, rgba(60,118,210,1) 0%, rgba(117,99,210,1) 87%);;
+}
+.active-button:active{
+  
+  background: rgb(117,99,210);
+background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87%);
+}
+
+.headline-button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 37vw 4.5vw;
+  width: 25vw;
+  height: 5vh;
+  font-size: 1.5vw;
+  font-family: 'Ruda', sans-serif;
+}
+
+
+// content - second section
+
+.advantages{
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__title{
+    font-size: 37px;
+    margin-bottom: 20px;
+    color:#2d2c2c;
+  }
+  &__description{
+    font-size: 22px;
+    color:#4c4c4c
+  }
+  img{
+    width: 50%;
+    height: auto;
+    
+  }
+}
+
+@media(max-width: 1100px){
+  .front-element{
+    margin-bottom: 40px;
+    h1{
+      margin: 120px 30px;
+    }
+  }
+
+  .headline-button{
+    width: 23vw;
+    height: 4vh;
+  }
+
+  .advantages{
+    &__title{
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    &__description{
+      font-size: 18px;
+      color:#4c4c4c
+    }
   }
 }
 
@@ -195,12 +324,59 @@
   .content{
     padding: 50px 0px 0px 0px;
   }
+
+  .front-element{
+    margin-bottom: 30px;
+    h1{
+      margin: 80px 20px;
+    }
+  }
+
+  .headline-button{
+    width: 20vw;
+    height: 3vh;
+  }
+
+  .advantages{
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &__item1{
+      order: 2;
+    }
+    &__item2{
+      order: 1;
+    }
+    &__title{
+      margin-bottom: 10px;
+    }
+    &__description{
+      font-size: 18px;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
 }
+
 
 @media(max-width: 414px){
   .header{
     h1{
       font-size: 25px;
     }
+  }
+  .front-element{
+    margin-bottom: 20px;
+    h1{
+      margin: 80px 20px;
+    }
+  }
+  .headline-button{
+    margin: 45vw 4vw;
+    width: 23vw;
+    height: 2vh;
   }
 }
