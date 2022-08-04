@@ -210,6 +210,11 @@ background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87
     h1{
       margin: 120px 30px;
     }
+    .headline-button{
+      width: 28vw;
+      height: 5vh;
+      font-size: 2.5vw;
+    }
   }
 
   .headline-button{
@@ -328,13 +333,43 @@ background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87
   .front-element{
     margin-bottom: 30px;
     h1{
-      margin: 80px 20px;
+      font-size: 5vw;
     }
-  }
-
-  .headline-button{
-    width: 20vw;
-    height: 3vh;
+    &__background{
+      position: static;
+    }
+    h1{
+      background: linear-gradient(to bottom, #525252 35%, #FF7BBA 74%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: static;
+      top:auto;
+      text-shadow:none;
+      margin: 0px 0px;
+    }
+    &__wrap{
+      height: 20vh;
+      background: url(../img/wave1.svg);
+      background-position: center center;
+      background-repeat: no-repeat; 
+      background-size: cover;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      -webkit-box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
+-moz-box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
+box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
+    }
+    .headline-button{
+      position: static;
+      top:auto;
+      margin: 0px 0px;
+      width: 40vw;
+      height: 4.5vh;
+      font-size: 3.5vw;
+    }
   }
 
   .advantages{
@@ -369,14 +404,27 @@ background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87
     }
   }
   .front-element{
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     h1{
-      margin: 80px 20px;
+      padding-top: 30px;
+      font-size: 8vw;
     }
-  }
-  .headline-button{
-    margin: 45vw 4vw;
-    width: 23vw;
-    height: 2vh;
+    .gradient1{
+      font-size: 9vw;
+    }
+    &__wrap{
+      height: 25vh;
+      flex-direction: column;
+      justify-content:center;
+      gap: 20px;
+      text-align: center;
+    }
+    .headline-button{
+      padding: 7px;
+      width: 57vw;
+      height: 10vh;
+      font-size: 5vw;
+      font-family: 'Ruda', sans-serif;
+    }
   }
 }
