@@ -166,7 +166,7 @@
 .active-button:active{
   
   background: rgb(117,99,210);
-background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87%);
+background: linear-gradient(180deg, #7563d2 0%, rgba(60,118,210,1) 87%);
 }
 
 .headline-button{
@@ -197,10 +197,76 @@ background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87
     font-size: 22px;
     color:#4c4c4c
   }
-  img{
+  &__picture{
     width: 50%;
     height: auto;
-    
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition:all 0.8s ease 0s;
+  }
+  &__picture.animated{
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+//content - third section
+.second-section{
+  background:url(../img/wave2.svg);
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.goals{
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  &__headline{
+    h2{
+      position: sticky;
+      top: 50%;
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+  &__row{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    h3{
+      text-align: center;
+      font-size: 25px;
+      color:#2d2c2c;
+      margin-bottom: 10px;
+    }
+    p{
+      text-align: center;
+      font-size: 20px;
+      color:#4c4c4c
+    }
+
+    img{
+      margin-bottom: 20px;
+      width: 100%;
+      opacity: 0.4;
+      transition:all 0.8s ease 0.8s;
+    }
+    img.animated{
+      opacity: 1;
+      transition:all 0.8s ease 0.8s;
+    }
   }
 }
 
@@ -230,6 +296,40 @@ background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87
     &__description{
       font-size: 18px;
       color:#4c4c4c
+    }
+  }
+
+  .goals{
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    &__headline{
+      h2{
+        text-align: center;
+        position: static;
+        margin-bottom: 30px;
+      }
+    }
+    &__row{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+    }
+    &__block{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 70px;
+      img{
+        width: 40%;
+        margin-bottom: 0px;
+      }
     }
   }
 }
@@ -359,8 +459,8 @@ background: linear-gradient(180deg, rgba(117,99,210,1) 0%, rgba(60,118,210,1) 87
       justify-content: space-between;
       align-items: center;
       -webkit-box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
--moz-box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
-box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
+      -moz-box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
+      box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
     }
     .headline-button{
       position: static;
@@ -389,9 +489,32 @@ box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
     &__description{
       font-size: 18px;
     }
-    img{
+    &__picture{
       width: 100%;
       height: auto;
+    }
+  }
+
+  .goals{
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    &__row{
+      margin-bottom: 100px;
+      width: 70%;
+      gap: 100px;
+    }
+    &__block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      img{
+        width: 100%;
+      }
     }
   }
 }
@@ -425,6 +548,23 @@ box-shadow: 0px 10px 25px 9px rgba(155,0,250,0.15);
       height: 10vh;
       font-size: 5vw;
       font-family: 'Ruda', sans-serif;
+    }
+  }
+  .goals{
+    margin-top: 70px;
+    gap: 10px;
+    h2{
+      font-size: 28px;
+    }
+    &__row{
+      margin-bottom: 70px;
+      width: 100%;
+      gap: 70px;
+    }
+    &__block{
+      img{
+        width: 100%;
+      }
     }
   }
 }
