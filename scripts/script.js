@@ -39,4 +39,30 @@ function animationShow(){
   }
 }
 animationShow()
+
+questionsSection.addEventListener('click', function(event){
+  let target = event.target;
+  let parent;
+  if(target.tagName == 'BUTTON' || target.tagName == 'IMG' || target.tagName == 'H5' || target.tagName == 'SPAN' || target.className == 'questions__line'){
+    if(target.tagName == 'BUTTON' || target.tagName == 'H5'){
+      parent = target.parentNode.parentNode;
+    } else if (target.tagName == 'IMG' || target.tagName == 'SPAN') {
+      parent = target.parentNode.parentNode.parentNode;
+    } else{
+      parent = target.parentNode;
+    }
+    let elem = parent.childNodes[5]
+    let arrow = parent.childNodes[1].childNodes[3].childNodes[0];
+    console.log(arrow)
+    if(elem.classList.contains('show')){
+      elem.classList.remove("show");
+      arrow.style.transform = 'rotate(0deg)';
+    } else{
+      elem.classList.add("show");
+      arrow.style.transform = 'rotate(180deg)';
+    }
+  } else{
+    return;
+  }
+})
   

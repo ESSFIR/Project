@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="345px" viewBox="0 0 1920 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Footer Swoop</title>
+    <defs>
+        <radialGradient cx="72.3322261%" cy="75.6915266%" fx="72.3322261%" fy="75.6915266%" r="519.645444%" gradientTransform="translate(0.723322,0.756915),scale(0.179688,1.000000),rotate(152.576991),translate(-0.723322,-0.756915)" id="radialGradient-1">
+            <stop stop-color="#FC5E9B" offset="0%"></stop>
+            <stop stop-color="#735ADB" offset="20.1672464%"></stop>
+            <stop stop-color="#5E69DC" offset="39.7560242%"></stop>
+            <stop stop-color="#3F90E5" offset="55.3109933%"></stop>
+            <stop stop-color="#5D6BDD" offset="88.5844107%"></stop>
+            <stop stop-color="#FC5E9B" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1920,345 L1920,0 C1652.93822,164.539345 1320.45163,262.965307 960.039804,262.965307 C599.592167,262.965307 267.075317,164.569004 0,0 L0,345 L1920,345 Z" id="BG_Swoop_2_v2.0" fill="url(#radialGradient-1)"></path>
+    </g>
+</svg>
