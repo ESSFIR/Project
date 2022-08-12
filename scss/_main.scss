@@ -46,7 +46,7 @@
       height: auto;
     }
   }
-  h1{
+  &__headline{
     width: 100%;
     text-align: center;
     font-family: 'Cute Font', cursive;
@@ -157,6 +157,10 @@
   color: white;
   font-family: 'Ruda', sans-serif;
   cursor:pointer;
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .active-button:hover{
@@ -477,7 +481,7 @@ background: linear-gradient(180deg, #7563d2 0%, rgba(60,118,210,1) 87%);
   }
 
   .header{
-    h1{
+    &__headline{
       font-size: 30px;
     }
     &__body{
@@ -701,7 +705,7 @@ background: linear-gradient(180deg, #7563d2 0%, rgba(60,118,210,1) 87%);
 
 @media(max-width: 414px){
   .header{
-    h1{
+    &__headline{
       font-size: 25px;
     }
   }
