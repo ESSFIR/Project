@@ -5,7 +5,7 @@
 
 // поля из формы
 $name = $_POST['user_name'];
-$lastName = $_POST['user_lastname']
+$lastName = $_POST['user_lastname'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
 $dateOfLesson = $_POST['user_date'];
@@ -17,14 +17,14 @@ $token = "5582453998:AAGMOzSCvZ2WIIzheveKi_B2pKhxG8hykcg";
 // $chat_id = "https://api.telegram.org/bot5582453998:AAGMOzSCvZ2WIIzheveKi_B2pKhxG8hykcg/getUpdates";
 $chat_id = "393836162";
 $arr = array(
-  'Им`я студента:' => $name,
+  'Имя студента:' => $name,
   'Фамілія:' => $lastName,
   'Телефон: ' => $phone,
   'Email:' => $email,
   'Перший урок:' => $dateOfLesson,
   'Рівень знань англійської:' => $level,
   'Кількість уроків в тиждень:' => $lesson,
-  'Планує отримати результат за:' => $result,
+  'Планує отримати результат за:' => $result
 );
 
 foreach($arr as $key => $value) {

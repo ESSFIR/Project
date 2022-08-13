@@ -92,9 +92,7 @@ function checkForm(){
     let interest = elements[i].nextSibling.nextSibling.innerHTML;
     userInterests += interest + ',';
   }
-
-
-  alert('nice!')
+  
   document.getElementById('formTelegram').submit();
 }
 
