@@ -123,9 +123,13 @@
 .form__description p {
   font-weight: 600;
 }
-.form__description .red {
+.form .red {
   font-size: 18px;
   color: rgb(255, 44, 160);
+}
+.form .below {
+  margin-top: 5px;
+  font-weight: 600;
 }
 .form__wrap {
   display: flex;
@@ -147,6 +151,10 @@
   width: 195px;
   height: auto;
   opacity: 0.5;
+  transition: 1s;
+}
+.form__elem .active {
+  opacity: 1;
 }
 .form__elem p {
   font-size: 18px;
@@ -185,6 +193,32 @@
   background: linear-gradient(180deg, #7563d2 0%, rgb(60, 118, 210) 87%);
 }
 
+#myProgress {
+  width: 100%;
+  background-color: rgba(117, 99, 210, 0.201);
+  border-radius: 30px;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  border-radius: 30px;
+  background: rgb(64, 132, 238);
+  background: linear-gradient(180deg, rgb(64, 132, 238) 0%, #806bf1 87%);
+}
+
+#recomendation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  display: none;
+  width: 100%;
+}
+#recomendation p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 @media (max-width: 1100px) {
   .presentation {
     margin-top: 50px;
@@ -219,6 +253,10 @@
     font-size: 16px;
   }
   .form__description .red {
+    font-size: 16px;
+  }
+  #recomendation p {
+    margin-top: 10px;
     font-size: 16px;
   }
 }
@@ -288,6 +326,9 @@
     height: 40px;
     font-size: 18px;
   }
+  #myBar {
+    height: 25px;
+  }
 }
 @media (max-width: 414px) {
   .presentation h1 {
@@ -350,6 +391,9 @@
     width: 40%;
     height: 40px;
     font-size: 18px;
+  }
+  #myBar {
+    height: 20px;
   }
 }
 .header {
@@ -750,6 +794,9 @@
 }
 
 @media (max-width: 1100px) {
+  .header__headline {
+    font-size: 40px;
+  }
   .front-element {
     margin-bottom: 40px;
   }

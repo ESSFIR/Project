@@ -405,6 +405,9 @@ background: linear-gradient(180deg, #7563d2 0%, rgba(60,118,210,1) 87%);
 }
 
 @media(max-width: 1100px){
+  .header__headline{
+      font-size: 40px;
+  }
   .front-element{
     margin-bottom: 40px;
     h1{

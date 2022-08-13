@@ -29,7 +29,7 @@
               <a href="" class="header__link">Тест</a>
             </li>
             <li>
-              <a href="prices.html" class="header__link">Ціни</a>
+              <a href="prices.html" class="header__link">Записатись</a>
             </li>
           </ul>
         </nav>
@@ -72,177 +72,189 @@
     </section>
     <section>
       <div class="container">
-        <div class="form">
-          <div class="form__row">
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Ім`я</p>
-                <p id='firstNameError' class="red">Не оставляйте это поле пустым</p>
+        <form action="telegram.php" method="POST" id="formTelegram" onsubmit="return false">
+          <div class="form">
+            <div class="form__row">
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Ім`я</p>
+                  <p id='firstNameError' class="red"></p>
+                </div>
+                <input id="firstName" name="user_name">
               </div>
-              <input id="firstName">
-            </div>
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Фамілія</p>
-                <p id='lastNameError' class="red"></p>
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Фамілія</p>
+                  <p id='lastNameError' class="red"></p>
+                </div>
+                <input id='lastName' name="user_lastname">
               </div>
-              <input id='lastName'>
+  
             </div>
-
+  
+            <div class="form__row">
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Телефон</p>
+                  <p id='phoneError' class="red"></p>
+                </div>
+                <input id="phone" name="user_phone">
+              </div>
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Email</p>
+                  <p id='emailError' class="red"></p>
+                </div>
+                <input id='email' name="user_email">
+              </div>
+              
+            </div>
+  
+            <div class="form__row">
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Перший урок</p>
+                  <p id='firstLessonError' class="red"></p>
+                </div>
+                <input id="firstLesson" type="date" name="user_date">
+              </div>
+  
+              <div class="form__block">
+                <p class="form__info">Виберіть дату першого заняття, а ми обіцяємо встигнути підібрати Вам викладача.</p>
+              </div>
+              
+            </div>
+  
+            <div class="form__row">
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Ваш рівень</p>
+                  <p id='levelError' class="red"></p>
+                </div>
+                <select name="level" id="level" onchange="showResults()" name="user_level">
+                  <option value=""></option>
+                  <option value="Beginner">Beginner - A0</option>
+                  <option value="Elementary">Elementary - A1</option>
+                  <option value="Pre-Intermediate">Pre-Intermediate - A2</option>
+                  <option value="Intermediate">Intermediate - B1</option>
+                  <option value="Upper-Intermediate">Upper-Intermediate - B2</option>
+                  <option value="Advanced">Advanced - C1</option>
+                  <option value="unknown">Не можу визначитись</option>
+                </select>
+              </div>
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p class="form__info">Не хвилюйтесь, якщо ви не можете визначити свій рівень англійської. Наші професійні викладачі допоможуть Вам з`ясувати це на першому вступному занятті.<br>Або ви можете скористатись цим <a href="#">посиланням</a> та пройти тест на визначення Вашого ймовірного рівня англійської мови.</p>
+                </div>
+              </div>
+              
+            </div>
+  
+            <div class="form__row">
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Кількість занять в неділю</p>
+                  <p id='lessonQuantityError' class="red"></p>
+                </div>
+                <input id="lessonQuantity" type="number" onchange="showResults()" name="user_lesson">
+              </div>
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Я хочу досягти наступного рівня через:</p>
+                </div>
+                <select name="time" id="resultTime" onchange="showResults()" name="user_result">
+                  <option value=""></option>
+                  <option value="3">3 місяці</option>
+                  <option value="4">4 місяці</option>
+                  <option value="5">5 місяців</option>
+                  <option value="6">6 місяців</option>
+                  <option value="7">7 місяців</option>
+                  <option value="8">8 місяців</option>
+                  <option value="9">9 місяців</option>
+                  <option value="10">10 місяців</option>
+                  <option value="11">11 місяців</option>
+                  <option value="12">Рік</option>
+                </select>
+                <p id='resultTimeError' class="red below"></p>
+              </div>
+              
+            </div>
+  
+            <div class="form__row">
+              <div id="recomendation">
+                <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+                <p id="recomend"></p>
+              </div>
+            </div>
+  
+            <div class="form__row">
+  
+              <div class="form__block">
+                <div class="form__description">
+                  <p>Теми, що мене цікавлять:</p>
+                  <p id='interestsError' class="red"></p>
+                </div>
+                <div class="form__wrap" id="clickArea">
+                  <div class="form__elem">
+                    <img src="img/24.jpg">
+                    <p>Книги</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/25.jpg">
+                    <p>Подорожі</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/26.jpg">
+                    <p>Фільми</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/27.jpg">
+                    <p>Спорт</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/28.jpg">
+                    <p>Психологія</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/29.jpg">
+                    <p>Політика</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/30.jpg">
+                    <p>Новини</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/31.jpg">
+                    <p>Відео ігри</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/32.jpg">
+                    <p>Робота</p>
+                  </div>
+                  <div class="form__elem">
+                    <img src="img/33.jpg">
+                    <p>Живопис</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+  
+            <input type="submit" class="form__button" onclick="checkForm()"></input>
+  
           </div>
-
-          <div class="form__row">
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Телефон</p>
-                <p id='phoneError' class="red"></p>
-              </div>
-              <input id="phone">
-            </div>
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Email</p>
-                <p id='emailError' class="red"></p>
-              </div>
-              <input id='email'>
-            </div>
-            
-          </div>
-
-          <div class="form__row">
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Перший урок</p>
-                <p id='firstLessonError' class="red"></p>
-              </div>
-              <input id="firstLesson" type="date">
-            </div>
-
-            <div class="form__block">
-              <p class="form__info">Виберіть дату першого заняття, а ми обіцяємо встигнути підібрати Вам викладача.</p>
-            </div>
-            
-          </div>
-
-          <div class="form__row">
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Ваш рівень</p>
-                <p id='levelError' class="red"></p>
-              </div>
-              <select name="level" id="level">
-                <option value=""></option>
-                <option value="Beginner">Beginner - A0</option>
-                <option value="Elementary">Elementary - A1</option>
-                <option value="Pre-Intermediate">Pre-Intermediate - A2</option>
-                <option value="Intermediate">Intermediate - B1</option>
-                <option value="Upper-Intermediate">Upper-Intermediate - B2</option>
-                <option value="Advanced">Advanced - C1</option>
-                <option value="unknown">Не можу визначитись</option>
-              </select>
-            </div>
-
-            <div class="form__block">
-              <div class="form__description">
-                <p class="form__info">Не хвилюйтесь, якщо ви не можете визначити свій рівень англійської. Наші професійні викладачі допоможуть Вам з`ясувати це на першому вступному занятті.<br>Або ви можете скористатись цим <a href="#">посиланням</a> та пройти тест на визначення Вашого ймовірного рівня англійської мови.</p>
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="form__row">
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Кількість занять в неділю</p>
-                <p id='lessonQuantityError' class="red"></p>
-              </div>
-              <input id="lessonQuantity" type="number">
-            </div>
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Я хочу досягти наступного рівня через:</p>
-                <p id='resultTimeError' class="red"></p>
-              </div>
-              <select name="time" id="resultTime">
-                <option value=""></option>
-                <option value="5-lessons">3 місяці</option>
-                <option value="4-lessons">4 місяці</option>
-                <option value="3-lessons">5-6 місяців</option>
-                <option value="2-lessons">7-8 місяців</option>
-                <option value="1-lesson">Рік</option>
-              </select>
-            </div>
-            
-          </div>
-
-          <div class="form__row">
-            <p id="recomendation"></p>
-          </div>
-
-          <div class="form__row">
-
-            <div class="form__block">
-              <div class="form__description">
-                <p>Теми, що мене цікавлять:</p>
-                <p id='interestsError' class="red"></p>
-              </div>
-              <div class="form__wrap">
-                <div class="form__elem">
-                  <img src="img/24.jpg">
-                  <p>Книги</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/25.jpg">
-                  <p>Подорожі</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/26.jpg">
-                  <p>Фільми</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/27.jpg">
-                  <p>Спорт</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/28.jpg">
-                  <p>Психологія</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/29.jpg">
-                  <p>Політика</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/30.jpg">
-                  <p>Новини</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/31.jpg">
-                  <p>Відео ігри</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/32.jpg">
-                  <p>Робота</p>
-                </div>
-                <div class="form__elem">
-                  <img src="img/33.jpg">
-                  <p>Живопис</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-
-          <input type="submit" class="form__button"></input>
-
-        </div>
+        </form>
       </div>
     </section>
     <section class="fourth-section">
@@ -277,6 +289,6 @@
     </section>
   </div>
 
-<script src="scripts/script.js"></script>
+  <script src="scripts/prices.js"></script>
 </body>
 </html>

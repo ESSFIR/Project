@@ -117,10 +117,14 @@
     p{
       font-weight: 600;
     }
-    .red{
-      font-size: 18px;
-      color:rgb(255, 44, 160)
-    }
+  }
+  .red{
+    font-size: 18px;
+    color:rgb(255, 44, 160)
+  }
+  .below{
+    margin-top: 5px;
+    font-weight: 600;
   }
   &__wrap{
     display:flex;
@@ -141,6 +145,10 @@
       width: 195px;
       height: auto;
       opacity: 0.5;
+      transition: 1s;
+    }
+    .active{
+      opacity: 1;
     }
     p{
       font-size: 18px;
@@ -173,11 +181,37 @@
   }
   &__button:hover{
     background: rgb(48,97,175);
-    background: linear-gradient(180deg, rgba(60,118,210,1) 0%, rgba(117,99,210,1) 87%);;
+    background: linear-gradient(180deg, rgba(60,118,210,1) 0%, rgba(117,99,210,1) 87%);
   }
   &__button:active{
     background: rgb(117,99,210);
     background: linear-gradient(180deg, #7563d2 0%, rgba(60,118,210,1) 87%);
+  }
+}
+
+#myProgress {
+  width: 100%;
+  background-color: rgba(117, 99, 210, 0.201);
+  border-radius: 30px;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  border-radius: 30px;
+  background: rgb(64,132,238);
+  background: linear-gradient(180deg, rgba(64,132,238,1) 0%, #806bf1 87%);
+}
+
+#recomendation{
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  display: none;
+  width: 100%;
+  p{
+    margin-top: 10px;
+    font-size: 18px;
   }
 }
 
@@ -228,7 +262,14 @@
     }
     
   }
+  #recomendation{
+    p{
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }
 }
+
 
 
 @media(max-width:800px){
@@ -305,7 +346,10 @@
       font-size: 18px;
     }
   }
-  
+
+  #myBar {
+    height: 25px;
+  }
 }
 
 @media(max-width: 414px){
@@ -379,5 +423,8 @@
       height: 40px;
       font-size: 18px;
     }
+  }
+  #myBar {
+    height: 20px;
   }
 }
