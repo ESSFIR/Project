@@ -137,7 +137,7 @@
                   <p>Ваш рівень</p>
                   <p id='levelError' class="red"></p>
                 </div>
-                <select name="level" id="level" onchange="showResults()" name="user_level">
+                <select id="level" onchange="showResults()" name="user_level">
                   <option value=""></option>
                   <option value="Beginner">Beginner - A0</option>
                   <option value="Elementary">Elementary - A1</option>
@@ -171,7 +171,7 @@
                 <div class="form__description">
                   <p>Я хочу досягти наступного рівня через:</p>
                 </div>
-                <select name="time" id="resultTime" onchange="showResults()" name="user_result">
+                <select id="resultTime" onchange="showResults()" name="user_result">
                   <option value=""></option>
                   <option value="3">3 місяці</option>
                   <option value="4">4 місяці</option>
@@ -247,6 +247,7 @@
                     <p>Живопис</p>
                   </div>
                 </div>
+                <input name="user_interests" id="topics">
               </div>
               
             </div>

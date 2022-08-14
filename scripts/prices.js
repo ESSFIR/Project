@@ -1,3 +1,10 @@
+$(function(){
+  $('.header__burger').click(function(event){
+    $('.header__burger, .header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  })
+});
+
 function checkForm(){
   //first name validation
   let userFirstName = document.getElementById('firstName').value;
@@ -92,7 +99,8 @@ function checkForm(){
     let interest = elements[i].nextSibling.nextSibling.innerHTML;
     userInterests += interest + ',';
   }
-  
+  document.getElementById('topics').value = userInterests;
+
   document.getElementById('formTelegram').submit();
 }
 
