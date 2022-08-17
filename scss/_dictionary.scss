@@ -1,0 +1,60 @@
+.dictionary{
+  margin-top: 100px;
+  background-color: rgba(119, 101, 210, 0.2);
+  border-radius: 30px;
+  padding: 25px;
+  &__content{
+    display: block;
+    height: 50vh;
+  }
+  &__error{
+    display: none;
+    height: 50vh;
+    .wrap{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      svg{
+        width: 250px;
+        height: auto;
+        fill: white;
+        stroke: rgb(119, 101, 210);
+      }
+      h1{
+        text-align: center;
+        font-size: 40px;
+      }
+    }
+  }
+  &__search{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    padding: 0px 10px;
+    input{
+      width: 100%;
+      padding: 10px;
+      border-radius: 30px;
+      border: none;
+      font-size: 20px;
+      outline: none;
+    }
+    svg{
+      width: 20px;
+      fill: #4c4c4c;;
+    }
+  }
+  &__content{
+    img{
+      width: 300px;
+      height: auto;
+    }
+  }
+}
