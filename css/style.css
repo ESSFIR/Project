@@ -1237,11 +1237,54 @@ p {
 }
 .dictionary__content {
   display: block;
-  height: 50vh;
+  color: #4c4c4c;
+}
+.dictionary__content .flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 200px;
+}
+.dictionary__text-block .phonetics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dictionary__text-block .phonetics .part {
+  font-style: italic;
+  font-size: 40px;
+}
+.dictionary__text-block .phonetics button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: rgb(64, 132, 238);
+  background: linear-gradient(180deg, rgb(64, 132, 238) 0%, #806bf1 87%);
+}
+.dictionary__text-block .phonetics button svg {
+  width: 35px;
+  height: auto;
+  fill: white;
+}
+.dictionary__text-block .description h2 {
+  margin: 20px 0px 5px;
+}
+.dictionary__text-block .description .cover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.dictionary__text-block .description .cover svg {
+  width: 25px;
+  height: 25px;
+  fill: #ffffff;
 }
 .dictionary__error {
   display: none;
-  height: 50vh;
 }
 .dictionary__error .wrap {
   width: 100%;
@@ -1286,4 +1329,116 @@ p {
 .dictionary__content img {
   width: 300px;
   height: auto;
+}
+
+@media (max-width: 1100px) {
+  .dictionary {
+    margin-top: 50px;
+    background-color: rgba(119, 101, 210, 0.2);
+    border-radius: 30px;
+    padding: 25px;
+  }
+  .dictionary__content .flex-container {
+    gap: 20px;
+  }
+  .dictionary__text-block .phonetics button {
+    width: 50px;
+    height: 50px;
+  }
+  .dictionary__text-block .phonetics button svg {
+    width: 30px;
+  }
+  .dictionary__text-block .description p {
+    font-size: 20px;
+  }
+  .dictionary__text-block .description h2 {
+    margin: 20px 0px 5px;
+  }
+  .dictionary__error {
+    display: none;
+  }
+  .dictionary__error .wrap h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .dictionary {
+    margin-top: 30px;
+  }
+  .dictionary__content {
+    display: block;
+  }
+  .dictionary__content img {
+    width: 25vw;
+    height: auto;
+  }
+  .dictionary__content .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .dictionary__text-block .phonetics {
+    margin-bottom: 5px;
+  }
+  .dictionary__text-block .phonetics h1 {
+    font-size: 6vw;
+  }
+  .dictionary__text-block .phonetics .part {
+    font-style: italic;
+    font-size: 5vw;
+  }
+  .dictionary__text-block .phonetics button {
+    width: 35px;
+    height: 35px;
+  }
+  .dictionary__text-block .phonetics button svg {
+    width: 20px;
+  }
+  .dictionary__text-block .description h2 {
+    margin: 10px 0px 5px;
+    font-size: 19px;
+  }
+  .dictionary__text-block .description p {
+    font-size: 16px;
+  }
+  .dictionary__text-block .description .cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+  .dictionary__text-block .description .cover svg {
+    width: 25px;
+    height: 17px;
+    fill: #ffffff;
+  }
+  .dictionary__error {
+    display: none;
+  }
+  .dictionary__error .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .dictionary__error .wrap h1 {
+    font-size: 20px;
+  }
+  .dictionary__search {
+    margin-bottom: 20px;
+  }
+  .dictionary__search input {
+    padding: 5px;
+  }
+}
+@media (max-width: 414px) {
+  .dictionary__content img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
