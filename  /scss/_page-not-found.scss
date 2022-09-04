@@ -1,0 +1,106 @@
+.error{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &__headline1{
+    font-size: 150px;
+    background: linear-gradient(to right, rgb(255, 123, 186) 20%, rgb(155, 0, 250) 40%, rgb(155, 0, 250) 60%, rgb(255, 123, 186) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 7s linear infinite;
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+
+  &__headline2{
+    color: #4c4c4c;
+    margin-bottom: 30px;
+  }
+
+  button{
+    margin-top: 20px;
+    width: 40%;
+    margin: 0 auto;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    background: rgb(64,132,238);
+    background: linear-gradient(180deg, rgba(64,132,238,1) 0%, #806bf1 87%);
+    color: white;
+    font-family: 'Ruda', sans-serif;
+    cursor:pointer;
+
+    &:hover{
+      background: rgb(48,97,175);
+      background: linear-gradient(180deg, rgba(60,118,210,1) 0%, rgba(117,99,210,1) 87%);
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+@media(max-width: 1100px){
+  .error{
+    margin-top: 50px;
+    gap: 20px;
+  
+    &__headline1{
+      font-size: 130px;
+    }
+  
+    &__headline2{
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media(max-width: 800px){
+  .error{
+    margin-top: 30px;
+    gap: 10px;
+  
+    &__headline1{
+      font-size: 90px;
+    }
+  
+    &__headline2{
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    button{
+      width: 50%;
+      height: 40px;
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media(max-width: 414px){
+  .error{
+    button{
+      width: 60%;
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+}

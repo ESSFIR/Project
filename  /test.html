@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#975bd5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Тест</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <a href="index.html" class="header__logo">
+          <img src="img/logo.jpg">know
+        </a>
+        <a href="index.html" class="header__headline">ONLINE ENGLISH SCHOOL</a>
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <a href="dictionary.html" class="header__link">Словник</a>
+            </li>
+            <li>
+              <a href="#" class="header__link colored">Тест</a>
+            </li>
+            <li>
+              <a href="prices.html" class="header__link">Записатись</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <section id="frontBlock">
+      <div class="container">
+        <div class="test-introduction" id="startPage">
+          <div class="wrap">
+            <h1><span class="gradient2">Безкоштовний тест</span> з англійської мови</h1>
+            <p>Пройдіть тест, щоб дізнатися свій приблизний <b>рівень володіння англійською мовою</b>. Під час тесту вам буде запропоновано 50 запитань  – уважно читайте та думайте, перш ніж відповісти.</p>
+            <p class="margin">Коли ви закінчите тест, ви дізнаєтеся свій приблизний рівень англійської мови. Потім ви можете <b>записатись</b> на свій перший урок, вказати власний рівень знань англійської мови, та <b>запланувати процес навчання</b>.</p>
+            <button onclick = "startTest()">Розпочати</button>
+          </div>
+          <img src="img/36.jpg">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="test">
+          <div class="test__block" id="page1">
+            <h1>Оберіть правильну відповідь :</h1>
+            <div class="test__element">
+              <h2><span class="gradient2">1.</span> I’m 18 and my brother is 20, so he’s ........ me.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test1" value="adjectives" />  the oldest of </label>
+                <label><input type="radio" name="test1" value="right">  older than</label>
+                <label><input type="radio" name="test1" value="adjectives">  as old as </label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">2.</span> Carl’s very ......... He’s never late, and he never
+                forgets to do things.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test2" value="right" />  reliable</label>
+                <label><input type="radio" name="test2" value="wrong">  patient</label>
+                <label><input type="radio" name="test2" value="wrong">  strict</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">3.</span> We stayed in a lovely villa ........ the sea.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test3" value="wrong" />  it overlooks</label>
+                <label><input type="radio" name="test3" value="wrong">  overlooked</label>
+                <label><input type="radio" name="test3" value="right">  overlooking</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">4.</span> Not until the 1980s ........ for the average person to own a computer. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test4" value="wrong" />  it was possible</label>
+                <label><input type="radio" name="test4" value="right">  was it possible</label>
+                <label><input type="radio" name="test4" value="wrong">  was possible</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">5.</span> Jan ........ her arm on a hot iron.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test5" value="wrong" />  broke</label>
+                <label><input type="radio" name="test5" value="right">  burned</label>
+                <label><input type="radio" name="test5" value="wrong">  sprained</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">6.</span> Tomorrow’s a holiday, so we ........ go to work.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test6" value="modals" />  have to</label>
+                <label><input type="radio" name="test6" value="modals">  mustn`t</label>
+                <label><input type="radio" name="test6" value="right">  don`t have to</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">7.</span> I usually ........ swimming at least once a week.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test7" value="right" />   go</label>
+                <label><input type="radio" name="test7" value="wrong">  do</label>
+                <label><input type="radio" name="test7" value="wrong">  play</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">8.</span> My friend Siena ........ to Russia last year.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test8" value="right" />   went</label>
+                <label><input type="radio" name="test8" value="pastSimple">  has gone</label>
+                <label><input type="radio" name="test8" value="pastSimple">  has been</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">9.</span> This is ........ area, with a lot of factories and
+                warehouses.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test9" value="wrong" />   an agricultural</label>
+                <label><input type="radio" name="test9" value="right">  an industrial </label>
+                <label><input type="radio" name="test9" value="wrong">   a residential</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">10.</span> If I ........ well in my exams, I ........ to university.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test10" value="firstConditional" />   will do; will go</label>
+                <label><input type="radio" name="test10" value="firstConditional">  will do; go</label>
+                <label><input type="radio" name="test10" value="right">  do; will go</label>
+              </div>
+            </div>
+            <button onclick="scrollPage()">Далі</button>
+          </div>
+          <div class="test__block" id="page2">
+            <h1>Оберіть правильну відповідь :</h1>
+            <div class="test__element">
+              <h2><span class="gradient2">11.</span> She was so upset that she burst ........ tears.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test11" value="right" />  into</label>
+                <label><input type="radio" name="test11" value="wrong">  out</label>
+                <label><input type="radio" name="test11" value="wrong">  with</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">12.</span> Where did you go ........ holiday last year?</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test12" value="wrong" />  for</label>
+                <label><input type="radio" name="test12" value="right">  on</label>
+                <label><input type="radio" name="test12" value="wrong">  to</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">13.</span> Ocean currents ........ play an important part in
+                regulating global climate.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test13" value="right" />  are known to</label>
+                <label><input type="radio" name="test13" value="passiveVoice">  thought to</label>
+                <label><input type="radio" name="test13" value="passiveVoice">   are believed that they</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">14.</span> My cousin ........ getting a job in Bahrain.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test14" value="presentContinuous" />   would like</label>
+                <label><input type="radio" name="test14" value="presentContinuous">  is planning</label>
+                <label><input type="radio" name="test14" value="right">  is thinking of</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">15.</span> I can’t ........ your hair, because I haven’t got any
+                scissors. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test15" value="wrong" />  brush</label>
+                <label><input type="radio" name="test15" value="right">  cut</label>
+                <label><input type="radio" name="test15" value="wrong">  wash</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">16.</span> I wish I ........ have an exam tomorrow!</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test16" value="iWish" />  don`t</label>
+                <label><input type="radio" name="test16" value="right">  didn`t</label>
+                <label><input type="radio" name="test16" value="iWish">  won`t</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">17.</span> The government plans to ........ taxes on sales of
+                luxury items. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test17" value="right" />   increase</label>
+                <label><input type="radio" name="test17" value="wrong">  expand</label>
+                <label><input type="radio" name="test17" value="wrong">  go up</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">18.</span> When I first moved to Hong Kong, life in a different country was very strange, but now I’m used ........ here. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test18" value="usedTo" />   living</label>
+                <label><input type="radio" name="test18" value="usedTo">  to live</label>
+                <label><input type="radio" name="test18" value="right">  to living</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">19.</span> There ........ milk in the fridge.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test19" value="right" />   is some</label>
+                <label><input type="radio" name="test19" value="there">  are some</label>
+                <label><input type="radio" name="test19" value="there">   is a</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">20.</span> Criminals are people who are guilty of ........ the law.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test20" value="right" />   breaking</label>
+                <label><input type="radio" name="test20" value="wrong">  cheating</label>
+                <label><input type="radio" name="test20" value="wrong">  committing</label>
+              </div>
+            </div>
+            <button onclick="scrollPage()">Далі</button>
+          </div>
+          <div class="test__block" id="page3">
+            <h1>Оберіть правильну відповідь :</h1>
+            <div class="test__element">
+              <h2><span class="gradient2">21.</span> Why on earth isn’t Josh here yet? ........ for him for
+                over an hour!</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test21" value="presentPC" />  I’m waiting</label>
+                <label><input type="radio" name="test21" value="right">  I’ve been waiting</label>
+                <label><input type="radio" name="test21" value="presentPC">  I’ve waited</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">22.</span> “It’s pouring down, and it’s freezing.” What are the
+                weather conditions?</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test22" value="wrong" />   high winds and snow</label>
+                <label><input type="radio" name="test22" value="right">  heavy rain and cold temperatures </label>
+                <label><input type="radio" name="test22" value="wrong">  thick cloud but quite warm</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">23.</span> ........ feeling OK? You don’t look very well.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test23" value="questions" />  Do you</label>
+                <label><input type="radio" name="test23" value="questions">  You are</label>
+                <label><input type="radio" name="test23" value="right">   Are you</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">24.</span> Daniel’s hair is getting far too long; he should ........
+                soon. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test24" value="wrong" />   cut it</label>
+                <label><input type="radio" name="test24" value="wrong">  have cut it</label>
+                <label><input type="radio" name="test24" value="right">  have it cut</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">25.</span> Mandy works for a computer software company. She got ........ recently, and so now she’s an area manager. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test25" value="wrong" />   made redundant</label>
+                <label><input type="radio" name="test25" value="right">  promoted</label>
+                <label><input type="radio" name="test25" value="wrong">  a raise</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">26.</span> I can’t hear you – it’s ........ noisy in here.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test26" value="right" />  too</label>
+                <label><input type="radio" name="test26" value="wrong">  too much</label>
+                <label><input type="radio" name="test26" value="wrong">  too many</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">27.</span> Jamal has just sent me ........ to arrange plans for this
+                weekend. </h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test27" value="wrong" />  a blog</label>
+                <label><input type="radio" name="test27" value="right">  an email</label>
+                <label><input type="radio" name="test27" value="wrong">  a website</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">28.</span> I promise I’ll call you as soon as I .........</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test28" value="right" />   I arrive</label>
+                <label><input type="radio" name="test28" value="wrong">  I arrived</label>
+                <label><input type="radio" name="test28" value="wrong">  I`ll arrive</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">29.</span> Photographers and designers need to be very .........</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test29" value="right" />   creative</label>
+                <label><input type="radio" name="test29" value="wrong">  fit</label>
+                <label><input type="radio" name="test29" value="wrong">   annoying</label>
+              </div>
+            </div>
+            <div class="test__element">
+              <h2><span class="gradient2">30.</span> The global financial crisis, ........ is forcing lots of small
+                businesses to close, does not look set to end soon.</h2>
+              <div class="test__variants">
+                <label><input type="radio" name="test30" value="wrong" />   fit</label>
+                <label><input type="radio" name="test30" value="wrong">  that</label>
+                <label><input type="radio" name="test30" value="right">  which</label>
+              </div>
+            </div>
+            <button class="confirm" onclick="checkTest()">Перевірити</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="test-result" id="resultsPage">
+          <div class="test-result__block">
+            <div class="wrap elem-to-print smaller">
+              <h1>Ваш рівень</h1>
+              <div id="englishLevel">A1</div>
+              <div id="englishDescription">Pre-Intermediate</div>
+            </div>
+            <div class="wrap bigger">
+              <h1>Результат - <span id="testPoints">10</span> / 30</h1>
+              <p id="levelDescription">Ті, хто володіють мовою на цьому рівні, можуть підтримати просту розмову на базові життєві теми (професія, сім’я, хобі) і в різних ситуаціях (кафе, заправка, магазин, лікарня). Вміють писати короткі записки й твори, але зі словником. Можуть читати адаптовані тексти обсягом до 500 слів, де трапляються незнайомі слова, але це не заважає вловити загальну суть твору.</p>
+            </div>
+          </div>
+
+          <div class="test-result__errors purple">
+            <div class="wrap smaller" id="hide">
+              <div class="elem-to-print">
+                <h3>Помилки в тесті по темам:</h3>
+                  <div id="errors">
+                  </div>
+              </div>
+              <div class="print-button">
+                <h3>Роздрукуй, аби не забути</h3>
+                <button type="button" onclick="print_doc()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448 192H64C28.65 192 0 220.7 0 256v96c0 17.67 14.33 32 32 32h32v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h32c17.67 0 32-14.33 32-32V256C512 220.7 483.3 192 448 192zM384 448H128v-96h256V448zM432 296c-13.25 0-24-10.75-24-24c0-13.27 10.75-24 24-24s24 10.73 24 24C456 285.3 445.3 296 432 296zM128 64h229.5L384 90.51V160h64V77.25c0-8.484-3.375-16.62-9.375-22.62l-45.25-45.25C387.4 3.375 379.2 0 370.8 0H96C78.34 0 64 14.33 64 32v128h64V64z"/></svg></button>
+              </div>
+            </div>
+            <div class="invitaion bigger" id="invitation">
+              <p>Вітаємо! Тепер Ви знаєте власний рівень володіння англійською мовою, а також перелік тем, на які Вам варто звернути увагу. Реєструйтесь на перше заняття та починайте навчання, а наші викладачі залюбки допоможуть Вам заповнити прогалини у знаннях.</p>
+              <button ><a href="prices.html">Записатись</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fourth-section">
+      <div class="footer-element"></div>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__column">
+            <div class="wrap">
+              <img src="img/logo2.png">
+              <h5>know</h5>
+            </div>
+            <h5>Online English School</h5>
+          </div>
+          <div class="footer__column">
+            <div class="footer__line">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+              <p>+38 (093)876 45 78</p>
+            </div>
+            <div class="footer__line">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+              <p>feedback@iknow.com</p>
+            </div>
+            <div class="footer__line">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="preloader">
+    <div class="preloader-image"></div>
+  </div>
+  
+  <script src="scripts/test.js"></script>
+</body>
+</html>
