@@ -21,7 +21,16 @@ p{
   font-size: 22px;
   color:#4c4c4c
 }
+.colored{
+  color: #8139b6;
+}
 
+@media (max-width: 800px){
+  .colored{
+    color: white;
+    border-bottom: 2px solid white;
+  }
+}
 // body{
   // font-family: "DM Sans";
   // font-family: 'Ruda', sans-serif;

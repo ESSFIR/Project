@@ -5,6 +5,16 @@ $(function(){
   })
 });
 
+window.onload = function(){
+  window.setTimeout(function(){
+  document.body.classList.add('loaded')
+}, 3000)
+  let englishLevel = localStorage.getItem('level');
+  if(englishLevel != ''){
+    level.value = englishLevel
+  }
+}
+
 function checkForm(){
   //first name validation
   let userFirstName = document.getElementById('firstName').value;

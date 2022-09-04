@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iKnow</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#975bd5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Тест</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -25,7 +32,7 @@
               <a href="dictionary.html" class="header__link">Словник</a>
             </li>
             <li>
-              <a href="#" class="header__link">Тест</a>
+              <a href="#" class="header__link colored">Тест</a>
             </li>
             <li>
               <a href="prices.html" class="header__link">Записатись</a>
@@ -324,7 +331,7 @@
       <div class="container">
         <div class="test-result" id="resultsPage">
           <div class="test-result__block">
-            <div class="wrap">
+            <div class="wrap elem-to-print smaller">
               <h1>Ваш рівень</h1>
               <div id="englishLevel">A1</div>
               <div id="englishDescription">Pre-Intermediate</div>
@@ -336,21 +343,26 @@
           </div>
 
           <div class="test-result__errors purple">
-            <div class="wrap">
-              <h3>Помилки в тесті по темам:</h3>
-                <div id="errors">
-                </div>
+            <div class="wrap smaller" id="hide">
+              <div class="elem-to-print">
+                <h3>Помилки в тесті по темам:</h3>
+                  <div id="errors">
+                  </div>
+              </div>
+              <div class="print-button">
+                <h3>Роздрукуй, аби не забути</h3>
+                <button type="button" onclick="print_doc()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448 192H64C28.65 192 0 220.7 0 256v96c0 17.67 14.33 32 32 32h32v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h32c17.67 0 32-14.33 32-32V256C512 220.7 483.3 192 448 192zM384 448H128v-96h256V448zM432 296c-13.25 0-24-10.75-24-24c0-13.27 10.75-24 24-24s24 10.73 24 24C456 285.3 445.3 296 432 296zM128 64h229.5L384 90.51V160h64V77.25c0-8.484-3.375-16.62-9.375-22.62l-45.25-45.25C387.4 3.375 379.2 0 370.8 0H96C78.34 0 64 14.33 64 32v128h64V64z"/></svg></button>
+              </div>
             </div>
-            <div class="invitaion">
+            <div class="invitaion bigger" id="invitation">
               <p>Вітаємо! Тепер Ви знаєте власний рівень володіння англійською мовою, а також перелік тем, на які Вам варто звернути увагу. Реєструйтесь на перше заняття та починайте навчання, а наші викладачі залюбки допоможуть Вам заповнити прогалини у знаннях.</p>
               <button ><a href="prices.html">Записатись</a></button>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </section>
+
     <section class="fourth-section">
       <div class="footer-element"></div>
       <div class="container">
@@ -382,7 +394,10 @@
       </div>
     </section>
   </div>
-
+  <div class="preloader">
+    <div class="preloader-image"></div>
+  </div>
+  
   <script src="scripts/test.js"></script>
 </body>
 </html>

@@ -5,6 +5,12 @@ $(function(){
   })
 });
 
+window.onload = function(){
+  window.setTimeout(function(){
+  document.body.classList.add('loaded')
+}, 3000)
+}
+
 window.addEventListener('load', function(){
   getInfo()
 })

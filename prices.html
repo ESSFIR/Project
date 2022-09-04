@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iKnow</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#975bd5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Записатись</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -28,7 +35,7 @@
               <a href="test.html" class="header__link">Тест</a>
             </li>
             <li>
-              <a href="#" class="header__link">Записатись</a>
+              <a href="#" class="header__link colored">Записатись</a>
             </li>
           </ul>
         </nav>
@@ -140,9 +147,9 @@
                   <option value=""></option>
                   <option value="Beginner">Beginner - A0</option>
                   <option value="Elementary">Elementary - A1</option>
-                  <option value="Pre-Intermediate">Pre-Intermediate - A2</option>
+                  <option value="Pre Intermediate">Pre-Intermediate - A2</option>
                   <option value="Intermediate">Intermediate - B1</option>
-                  <option value="Upper-Intermediate">Upper-Intermediate - B2</option>
+                  <option value="Upper Intermediate">Upper-Intermediate - B2</option>
                   <option value="Advanced">Advanced - C1</option>
                   <option value="unknown">Не можу визначитись</option>
                 </select>
@@ -287,6 +294,9 @@
         </div>
       </div>
     </section>
+  </div>
+  <div class="preloader">
+    <div class="preloader-image"></div>
   </div>
 
   <script src="scripts/prices.js"></script>
