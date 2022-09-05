@@ -148,11 +148,11 @@ function move() {
     courseLessonNum = 40;
   } else if(userLevel == 'Elementary'){
     courseLessonNum = 45;
-  } else if(userLevel == 'Pre-Intermediate'){
+  } else if(userLevel == 'Pre Intermediate'){
     courseLessonNum = 54;
   } else if(userLevel == 'Intermediate'){
     courseLessonNum = 45;
-  } else if(userLevel == 'Upper-Intermediate'){
+  } else if(userLevel == 'Upper Intermediate'){
     courseLessonNum = 71;
   } else if(userLevel == 'Advanced'){
     courseLessonNum = 55;
